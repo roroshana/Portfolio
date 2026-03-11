@@ -13,7 +13,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           className="inline-block text-sm font-semibold uppercase tracking-widest text-zinc-400 mb-6"
         >
-          UX Designer
+          PRODUCT DESIGNER / UX RESEARCHER
         </motion.span>
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ export default function Home() {
           transition={{ delay: 0.1 }}
           className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight leading-[1.1] mb-10"
         >
-          I design research-led digital products grounded in usability, systems thinking, and real-world constraints.
+          I design research-led digital products shaped by systems thinking, usability, and real-world behavior.
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -29,14 +29,14 @@ export default function Home() {
           transition={{ delay: 0.2 }}
           className="text-xl md:text-2xl text-zinc-500 leading-relaxed"
         >
-          I turn complex user problems into scalable, practical solutions with measurable impact.
+          I translate research insights into clear product decisions, thoughtful interactions, and practical digital experiences.
         </motion.p>
       </section>
 
       {/* Works Section */}
       <section className="space-y-12">
         <div className="flex items-center justify-between border-b border-zinc-100 pb-6">
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">Works</h2>
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">FEATURED PROJECTS</h2>
           <span className="text-sm text-zinc-300 font-medium">01 — 03</span>
         </div>
         
