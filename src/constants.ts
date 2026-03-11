@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [
   {
     id: "joinme",
     title: "JoinMe",
-    subtitle: "Reframing social connection through task-based interaction and privacy-aware product design.",
+    subtitle: "Task-based social platform designed to reduce anxiety in meeting new people.",
     image: "https://lh3.googleusercontent.com/d/1-qeqwDvcpO4_Uk1FtUh8PHYKMErSgpkx",
     summary: "JoinMe reframes connection around everyday action. Instead of asking 'Who do you want to be friends with?', the system asks 'What are you already doing today?'",
     role: "Sole UX Researcher & Product Designer",
@@ -143,7 +143,7 @@ export const PROJECTS: Project[] = [
   {
     id: "recycle",
     title: "Donate, Motivate, Support",
-    subtitle: "Designing a service system that aligns donors, local businesses, and textile recovery incentives.",
+    subtitle: "Service system connecting clothing donors, local businesses, and recycling incentives.",
     image: "https://lh3.googleusercontent.com/d/16qsEIyityL4LFE9359Qd-8DEIfnfGWHx",
     summary: "This project explores how Vancouver’s textile waste ecosystem can be strengthened by coordinating existing organizations rather than introducing new infrastructure.",
     role: "Systems Research & Ecosystem Strategy",
@@ -237,7 +237,7 @@ export const PROJECTS: Project[] = [
   {
     id: "cafe-redesign",
     title: "University Café Service Redesign",
-    subtitle: "Improving peak-hour service flow through spatial design, behavioral insight, and service restructuring.",
+    subtitle: "Improving peak-hour service flow through spatial layout and behavioral insights.",
     image: "https://lh3.googleusercontent.com/d/1XsSfTvVdFRNqePb9XY9GKJCEZKp1ewBz",
     heroImage: "https://lh3.googleusercontent.com/d/1S4PvbRS1GQ2prAaNW0qDGSHIVKNA2xNT",
     summary: "During peak lunch hours, the university café experienced operational breakdown. This project redesigns the spatial and service architecture to optimize throughput and reduce cognitive overload.",
