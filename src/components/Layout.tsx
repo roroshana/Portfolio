@@ -33,7 +33,7 @@ export default function Layout({ children }: LayoutProps) {
           </div>
           
           <a
-            href="https://drive.google.com/file/d/1pT_DNC6WNDxen-qWe85lWdFsz4nqjh0E/view?usp=share_link"
+            href="https://drive.google.com/file/d/1PPypH-lKo1LpRWQCgdlY4DeeyzNjUIrK/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 bg-zinc-900 text-white text-sm font-medium rounded-full hover:bg-zinc-800 transition-all active:scale-95 shadow-sm"
