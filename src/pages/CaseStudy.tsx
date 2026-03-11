@@ -19,9 +19,11 @@ export default function CaseStudy() {
           <h1 className="text-6xl md:text-8xl font-medium tracking-tight leading-[0.95] text-zinc-900">
             {project.title}
           </h1>
-          <p className="text-2xl md:text-3xl text-zinc-500 leading-tight max-w-3xl">
-            {project.summary}
-          </p>
+          <div className="text-2xl md:text-3xl text-zinc-500 leading-tight max-w-3xl space-y-6">
+            {project.summary.split('\n\n').map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
+          </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-10 border-t border-zinc-100">
             <div>
@@ -129,11 +131,13 @@ export default function CaseStudy() {
         </div>
       </section>
 
-      {/* 4. Behavioral Findings */}
+      {/* 4. Stakeholders / Behavioral Findings */}
       {project.behavioralFindings && (
         <section className="grid grid-cols-1 md:grid-cols-12 gap-12 pt-16 border-t border-zinc-100">
           <div className="md:col-span-4">
-            <h2 className="text-xl font-medium tracking-tight text-zinc-900">{project.behavioralFindings.title}</h2>
+            <h2 className="text-xl font-medium tracking-tight text-zinc-900">
+              {project.id === "cafe-redesign" ? "Stakeholders" : project.behavioralFindings.title}
+            </h2>
           </div>
           <div className="md:col-span-8">
             <ul className="space-y-6">
@@ -152,11 +156,11 @@ export default function CaseStudy() {
         </section>
       )}
 
-      {/* 5. Structural Decisions */}
+      {/* 5. Iteration & Decisions */}
       {project.structuralDecisions && (
         <section className="grid grid-cols-1 md:grid-cols-12 gap-12 pt-16 border-t border-zinc-100">
           <div className="md:col-span-4">
-            <h2 className="text-xl font-medium tracking-tight text-zinc-900">{project.structuralDecisions.title}</h2>
+            <h2 className="text-xl font-medium tracking-tight text-zinc-900">Iteration & Decisions</h2>
           </div>
           <div className="md:col-span-8 space-y-8">
             <div className="space-y-8">
@@ -192,12 +196,10 @@ export default function CaseStudy() {
         </section>
       )}
 
-      {/* 6. Process */}
+      {/* 6. Process / Approach */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-12 pt-16 border-t border-zinc-100">
         <div className="md:col-span-4">
-          <h2 className="text-xl font-medium tracking-tight text-zinc-900">
-            {project.id === "joinme" ? "Design Process" : "Process"}
-          </h2>
+          <h2 className="text-xl font-medium tracking-tight text-zinc-900">Process / Approach</h2>
         </div>
         <div className="md:col-span-8 space-y-8">
           <div className="space-y-4">
@@ -300,9 +302,7 @@ export default function CaseStudy() {
       {/* 8. Impact */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-12 pt-16 border-t border-zinc-100">
         <div className="md:col-span-4">
-          <h2 className="text-xl font-medium tracking-tight text-zinc-900">
-            {project.id === "joinme" ? "Validation from Testing" : "Impact"}
-          </h2>
+          <h2 className="text-xl font-medium tracking-tight text-zinc-900">Impact</h2>
         </div>
         <div className="md:col-span-8">
           <div className="space-y-4 max-w-2xl">
@@ -315,12 +315,10 @@ export default function CaseStudy() {
         </div>
       </section>
 
-      {/* 9. Reflection */}
+      {/* 9. Reflection / What I Learned */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-12 pt-16 border-t border-zinc-100">
         <div className="md:col-span-4">
-          <h2 className="text-xl font-medium tracking-tight text-zinc-900">
-            {project.id === "joinme" ? "What I Learned" : "Reflection"}
-          </h2>
+          <h2 className="text-xl font-medium tracking-tight text-zinc-900">Reflection / What I Learned</h2>
         </div>
         <div className="md:col-span-8">
           <ul className="space-y-4 max-w-2xl">

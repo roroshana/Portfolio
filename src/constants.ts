@@ -235,77 +235,77 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "cafe-redesign",
-    title: "University Café Service Redesign",
-    subtitle: "Improving peak-hour service flow through spatial layout and behavioral insights.",
+    title: "University Café — Service System Redesign",
+    subtitle: "Improving peak-hour café flow through spatial service architecture.",
     image: "https://lh3.googleusercontent.com/d/1XsSfTvVdFRNqePb9XY9GKJCEZKp1ewBz",
     heroImage: "https://lh3.googleusercontent.com/d/1S4PvbRS1GQ2prAaNW0qDGSHIVKNA2xNT",
-    summary: "During peak lunch hours, the university café experienced operational breakdown. This project redesigns the spatial and service architecture to optimize throughput and reduce cognitive overload.",
-    role: "Service Designer",
+    summary: "During peak lunch hours, the university café experienced long wait times, counter congestion, and confusion around pickup. The issue was not speed but structure — the physical layout did not reflect the actual sequence of service.\n\nThis project redesigns the café’s spatial and service architecture to create a clear flow from ordering to pickup, improving throughput and reducing cognitive load for both customers and staff.",
+    role: "Service Design Lead",
     team: "4 Designers",
-    type: "Research, Flow Analysis, Spatial Strategy, Service System Redesign",
+    type: "Service Design, Flow Analysis, Spatial Strategy, System Redesign",
     timeline: "Fall 2023",
-    tools: ["Space Planning", "Journey Mapping", "Observational Research", "Service Blueprinting"],
-    problem: "During peak hours, the university café experienced operational breakdown. Customers faced long wait times and confusion at pickup, while staff experienced workflow disruption and repeated interruptions. The issue was not simply speed — it was structural inefficiency and spatial misalignment.",
-    goal: "If we align spatial layout with service sequence and visibly separate ordering, waiting, and pickup zones, we can reduce cross-traffic, decrease counter crowding, lower staff interruption, and improve peak-hour throughput.",
+    tools: ["Observational Research", "Journey Mapping", "Spatial Analysis", "Service Blueprinting"],
+    problem: "During peak hours, the café experienced operational breakdowns. Customers faced long waits and pickup confusion, while staff dealt with frequent interruptions. The issue was not speed, but a misalignment between the physical layout and the service sequence.",
+    goal: "To align the spatial layout with the service sequence by separating ordering, waiting, and pickup zones. The goal was to reduce cross-traffic and counter crowding while improving peak-hour throughput.",
     constraints: [
-      "Spatial Constraint vs Flow Clarity: Redesigning within the existing footprint, avoiding structural renovation.",
-      "Infrastructure Cost vs Workflow Efficiency: Digital pickup screens introduce cost but reduce recurring interruption and confusion.",
-      "Staffing vs Structural Optimization: Improving systemic efficiency rather than increasing staff count."
+      "Spatial Constraint: Redesigning within the existing footprint without structural renovation.",
+      "Cost vs. Efficiency: Implementing digital status screens to reduce recurring staff interruptions.",
+      "Operational Optimization: Improving systemic flow rather than increasing staff count."
     ],
     methods: [
-      "Peak-hour observational studies",
-      "Interviews with staff, Samsung employees, and students",
-      "Persona development",
-      "Journey mapping",
-      "Literature review on queue management"
+      "Peak-Hour Observational Studies",
+      "Stakeholder Interviews (Staff, Samsung Employees, Students)",
+      "Persona Development",
+      "Service Journey Mapping",
+      "Queue Management Research"
     ],
     insights: [
-      "Structural confusion over speed: The issue was not speed — it was visibility and spatial sequencing. The physical layout did not reflect the café’s service sequence.",
-      "Journey mapping revealed three structural friction zones: Entry Congestion (Entry flow overlap), Counter Crowding (No designated waiting area), and Pickup Ambiguity (No visible status system)."
+      "Structure over speed: The primary issue was spatial sequencing. The layout did not reflect the service order, causing unpredictable movement between ordering and pickup.",
+      "Friction zones: Journey mapping revealed three breakdown points: entry congestion, counter crowding in waiting areas, and pickup ambiguity due to lack of order status."
     ],
     behavioralFindings: {
       title: "Stakeholder Tension",
       findings: [
-        "Time-constrained professionals (Samsung Employees): Required predictable, fast pickup within short lunch windows to maximize their downtime.",
-        "Students between classes: Needed clarity and speed in a crowded environment to avoid being late.",
-        "Baristas managing volume: Needed uninterrupted workflow and reduced counter crowding to maintain operational clarity."
+        "Samsung Employees: Needed predictable, fast pickup within short lunch windows to maximize limited break time.",
+        "Students: Required clear spatial cues and fast navigation to avoid delays between classes.",
+        "Baristas: Needed an uninterrupted workflow and reduced counter congestion to maintain operational efficiency."
       ]
     },
     structuralDecisions: {
       title: "Iteration & Structural Decisions",
       decisions: [
         {
-          label: "Iteration 01 — Visibility Without Flow Control",
-          description: "Introduced pickup screens and opposite-end pickup, but customer paths still intersected. Ordering and pickup zones were separated visually but not directionally.",
-          tradeoff: "Visibility alone does not resolve congestion if movement patterns remain unclear."
+          label: "Iteration 01 — Visibility Without Flow",
+          description: "Introduced pickup screens and dual registers. While visibility improved, customer paths still intersected and movement remained ambiguous.",
+          tradeoff: "Visibility alone does not resolve congestion without clear directional movement."
         },
         {
-          label: "Iteration 02 — Zonal Separation & Directional Architecture",
-          description: "Restructured the space into a linear progression (Entry → Order → Wait → Pickup → Exit) with clear zonal isolation and directional indicators.",
-          tradeoff: "Aligning spatial design with service sequence to create predictable movement patterns."
+          label: "Iteration 02 — Directional Flow (Selected)",
+          description: "Reorganized the layout into a one-directional sequence: Entry → Order → Wait → Pickup → Exit. This aligned the space with the service process.",
+          tradeoff: "Prioritized flow clarity and predictability over maximum seating density."
         }
       ],
       images: ["https://lh3.googleusercontent.com/d/1rMTdDpr3jQi6zOac2aedHuxqitByx0KT"]
     },
     process: {
       steps: [
-        "Conducted peak-hour observational studies and interviews to diagnose systemic friction beyond surface symptoms.",
-        "Mapped the service journey to identify breakdown points in entry, waiting, and pickup stages.",
-        "Developed and iterated on layout strategies, pivoting from simple visibility to a directional architecture model.",
-        "Validated the redesign through re-interviews and layout prototypes, confirming improved clarity and reduced stress."
+        "Conducted observational studies and interviews to diagnose systemic friction beyond surface-level delays.",
+        "Mapped the service journey to identify breakdown points across entry, ordering, waiting, and pickup stages.",
+        "Iterated spatial layout strategies, shifting from visibility improvements to a directional flow architecture.",
+        "Validated the redesign through follow-up interviews and layout walkthroughs to confirm reduced interruptions."
       ],
       images: [
         "https://lh3.googleusercontent.com/d/1qeu1IJqwqEf-2n9gCIaEaTcbgSwMN3zs"
       ]
     },
     solution: {
-      description: "A redesigned spatial system that aligns layout with service sequence, featuring one-directional flow, digital status screens, and isolated zones.",
+      description: "The final design introduces a spatial system that aligns the layout with the service sequence. By defining clear zones and directional movement, the café reduces congestion and improves both navigation and workflow.",
       features: [
-        "One-directional Customer Flow",
+        "One-Directional Customer Flow",
         "Digital Order Status Screens",
-        "Designated Waiting Bench Area",
+        "Designated Waiting Area",
         "Isolated Pickup Zone",
-        "Clear Signage & Floor Indicators"
+        "Clear Signage and Directional Indicators"
       ],
       images: [
         "https://lh3.googleusercontent.com/d/1XsSfTvVdFRNqePb9XY9GKJCEZKp1ewBz",
@@ -314,14 +314,15 @@ export const PROJECTS: Project[] = [
       ]
     },
     impact: [
-      "Increases peak-hour throughput potential and reduces cognitive load.",
-      "Decreases interruption points for staff and improves operational predictability.",
-      "Balances the needs of three stakeholder groups through structural re-architecture."
+      "Improves peak-hour throughput by aligning spatial layout with service order.",
+      "Reduces cognitive load for customers by clarifying movement through the space.",
+      "Decreases staff interruptions by separating waiting and pickup zones.",
+      "Balances stakeholder needs through a coordinated service system."
     ],
     reflection: [
-      "Effective service design requires aligning space, behavior, and process into a cohesive system.",
-      "Strengthened ability to diagnose systemic friction and translate research into architectural strategy.",
-      "Designing for both customer experience and operational workflow is essential for sustainable performance."
+      "Service design requires aligning spatial layout, human behavior, and process into a cohesive system.",
+      "Strengthened my ability to translate research insights into spatial and service architecture decisions.",
+      "Designing for both customer experience and staff workflow is essential for operational performance."
     ]
   }
 ];
