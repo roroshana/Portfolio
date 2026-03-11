@@ -5,9 +5,9 @@ import { motion } from "motion/react";
 
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-6 space-y-32">
+    <div className="max-w-7xl mx-auto px-6 space-y-24">
       {/* Hero Section */}
-      <section className="max-w-3xl pt-12 md:pt-20">
+      <section className="max-w-3xl pt-16 md:pt-24">
         <motion.span 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -48,17 +48,17 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-20 pt-20 border-t border-zinc-100">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-24 pt-16 border-t border-zinc-100">
         <div className="md:col-span-4">
           <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">About</h2>
         </div>
         <div className="md:col-span-8 space-y-12">
           <div className="space-y-6">
             <p className="text-2xl md:text-3xl text-zinc-900 leading-tight font-medium">
-              I’m a UX Designer with a background in interaction design and visual arts. My practice combines research, systems thinking, and structured problem-solving to design thoughtful digital experiences.
+              I'm a product designer and UX researcher with a background in interaction design and visual arts. My practice combines research, systems thinking, and structured problem-solving to design thoughtful digital experiences.
             </p>
             <p className="text-xl text-zinc-500 leading-relaxed">
-              I’m particularly interested in products that improve everyday interactions and human connection.
+              I'm particularly interested in products that improve everyday interactions, decision-making, and human connection.
             </p>
           </div>
 

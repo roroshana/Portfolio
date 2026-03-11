@@ -49,8 +49,8 @@ export const PROJECTS: Project[] = [
     image: "https://lh3.googleusercontent.com/d/1-qeqwDvcpO4_Uk1FtUh8PHYKMErSgpkx",
     summary: "JoinMe is a product concept that reframes connection around everyday action. Instead of asking users who they want to be friends with, it begins with a simpler question: what are you already doing today?",
     role: "Sole UX Researcher & Product Designer",
-    type: "Research, Service Prototyping, Product Architecture, Iteration",
-    timeline: "8 months (2024-2025)",
+    type: "Research, Service Prototyping, Product Design, Iteration",
+    timeline: "8 months (2024–2025)",
     tools: ["Figma", "Field Interviews", "Surveys", "Service Prototyping", "Usability Testing"],
     problem: "Despite the rise of friendship platforms such as Bumble BFF and Meetup, many interactions never transition into real-world engagement. Early interviews suggested a structural issue: these platforms often ask for emotional commitment before trust has been established.",
     goal: "I wanted to test whether beginning with a shared, low-pressure task rather than a friendship label could reduce anxiety and make real-world interaction more likely.",
@@ -91,12 +91,12 @@ export const PROJECTS: Project[] = [
         },
         {
           label: "Lightweight Filters",
-          description: "Usability testing revealed a need for minimal structure. I introduced simple activity and time filters to support clarity without overwhelming users.",
-          tradeoff: "Limited customization in exchange for speed and spontaneity."
+          description: "Usability testing showed that users needed minimal structure. I introduced simple activity and time filters to improve clarity without overwhelming them.",
+          tradeoff: "Less customization in exchange for speed and spontaneity."
         },
         {
           label: "Trust-Enhancing Profiles",
-          description: "Participants hesitated to meet strangers without context. I added interest tags, short descriptions, and visible verification indicators.",
+          description: "Participants hesitated to meet strangers without context. I added interest tags, short descriptions, and visible verification cues.",
           tradeoff: "More profile depth while maintaining low onboarding friction."
         }
       ]
