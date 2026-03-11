@@ -12,14 +12,14 @@ export default function CaseStudy() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-8 md:px-12 space-y-32 pb-32">
+    <div className="max-w-7xl mx-auto px-8 md:px-12 space-y-24 pb-32">
       {/* 1. Hero Section */}
-      <section className="space-y-16 pt-12">
+      <section className="space-y-12 pt-12 md:pt-20">
         <div className="space-y-8 max-w-4xl">
-          <h1 className="text-6xl md:text-8xl font-medium tracking-tight leading-[0.95]">
+          <h1 className="text-6xl md:text-8xl font-medium tracking-tight leading-[0.95] text-zinc-900">
             {project.title}
           </h1>
-          <p className="text-2xl md:text-3xl text-zinc-500 leading-tight">
+          <p className="text-2xl md:text-3xl text-zinc-500 leading-tight max-w-3xl">
             {project.summary}
           </p>
           
@@ -68,20 +68,20 @@ export default function CaseStudy() {
       </section>
 
       {/* 2. Overview */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-16">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-24 border-t border-zinc-100">
         <div className="md:col-span-4">
           <h2 className="text-xl font-medium tracking-tight text-zinc-900">Overview</h2>
         </div>
-        <div className="md:col-span-8 space-y-16">
-          <div className="space-y-6">
+        <div className="md:col-span-8 space-y-12">
+          <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">The Problem</h3>
             <p className="text-xl text-zinc-600 leading-relaxed max-w-2xl">{project.problem}</p>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">The Goal</h3>
             <p className="text-xl text-zinc-600 leading-relaxed max-w-2xl">{project.goal}</p>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">Constraints</h3>
             <ul className="space-y-3 text-xl text-zinc-600 max-w-2xl">
               {project.constraints.map((c, i) => (
@@ -96,16 +96,16 @@ export default function CaseStudy() {
       </section>
 
       {/* 3. Research */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-32 border-t border-zinc-100">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-24 border-t border-zinc-100">
         <div className="md:col-span-4">
           <h2 className="text-xl font-medium tracking-tight text-zinc-900">Research</h2>
         </div>
-        <div className="md:col-span-8 space-y-16">
-          <div className="space-y-6">
+        <div className="md:col-span-8 space-y-12">
+          <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">Methods</h3>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2">
               {project.methods.map((m, i) => (
-                <span key={i} className="px-5 py-2.5 bg-zinc-50 rounded-full text-sm font-medium border border-zinc-100">
+                <span key={i} className="px-4 py-2 bg-zinc-50 rounded-full text-xs font-semibold uppercase tracking-wider text-zinc-500 border border-zinc-100">
                   {m}
                 </span>
               ))}
@@ -113,7 +113,7 @@ export default function CaseStudy() {
           </div>
           <div className="space-y-8">
             <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">Key Insights</h3>
-            <ul className="space-y-10">
+            <ul className="space-y-8">
               {project.insights.map((insight, i) => (
                 <li key={i} className="space-y-2 max-w-2xl">
                   <p className="text-xl text-zinc-900 font-medium leading-tight">
@@ -131,12 +131,12 @@ export default function CaseStudy() {
 
       {/* 4. Behavioral Findings */}
       {project.behavioralFindings && (
-        <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-32 border-t border-zinc-100">
+        <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-24 border-t border-zinc-100">
           <div className="md:col-span-4">
             <h2 className="text-xl font-medium tracking-tight text-zinc-900">{project.behavioralFindings.title}</h2>
           </div>
           <div className="md:col-span-8">
-            <ul className="space-y-10">
+            <ul className="space-y-8">
               {project.behavioralFindings.findings.map((finding, i) => (
                 <li key={i} className="space-y-2 max-w-2xl">
                   <p className="text-xl text-zinc-900 font-medium leading-tight">
@@ -154,12 +154,12 @@ export default function CaseStudy() {
 
       {/* 5. Structural Decisions */}
       {project.structuralDecisions && (
-        <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-32 border-t border-zinc-100">
+        <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-24 border-t border-zinc-100">
           <div className="md:col-span-4">
             <h2 className="text-xl font-medium tracking-tight text-zinc-900">{project.structuralDecisions.title}</h2>
           </div>
           <div className="md:col-span-8 space-y-12">
-            <div className="space-y-12">
+            <div className="space-y-10">
               {project.structuralDecisions.decisions.map((decision, i) => (
                 <div key={i} className="space-y-4 max-w-2xl">
                   <h3 className="text-2xl font-medium text-zinc-900">{decision.label}</h3>
@@ -175,7 +175,7 @@ export default function CaseStudy() {
             </div>
             
             {project.structuralDecisions.images && project.structuralDecisions.images.length > 0 && (
-              <div className="space-y-6 pt-8">
+              <div className="space-y-8 pt-8">
                 {project.structuralDecisions.images.map((img, i) => (
                   <div key={i} className="rounded-2xl overflow-hidden border border-zinc-100 shadow-sm">
                     <img 
@@ -193,13 +193,13 @@ export default function CaseStudy() {
       )}
 
       {/* 6. Process */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-32 border-t border-zinc-100">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-24 border-t border-zinc-100">
         <div className="md:col-span-4">
           <h2 className="text-xl font-medium tracking-tight text-zinc-900">
             {project.id === "joinme" ? "Design Process" : "Process"}
           </h2>
         </div>
-        <div className="md:col-span-8 space-y-16">
+        <div className="md:col-span-8 space-y-12">
           <div className="space-y-6">
             <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">Approach</h3>
             <ol className="space-y-6 text-xl text-zinc-600 max-w-2xl">
@@ -211,11 +211,11 @@ export default function CaseStudy() {
               ))}
             </ol>
           </div>
-          <div className="space-y-8">
+          <div className="space-y-12">
             {project.id === "joinme" ? (
               <div className="space-y-12">
                 {/* 1. Hand drawn sketch (images[1]) - Bigger and taller */}
-                <div className="rounded-xl overflow-hidden border border-zinc-100 shadow-sm">
+                <div className="rounded-2xl overflow-hidden border border-zinc-100 shadow-sm">
                   <img 
                     src={project.process.images[1]} 
                     alt="Hand drawn sketch" 
@@ -225,7 +225,7 @@ export default function CaseStudy() {
                 </div>
                 
                 {/* 2. Rough Figma / Phones (images[0]) - Smaller (half width) */}
-                <div className="max-w-md mx-auto w-full rounded-xl overflow-hidden border border-zinc-100 shadow-sm">
+                <div className="max-w-md mx-auto w-full rounded-2xl overflow-hidden border border-zinc-100 shadow-sm">
                   <img 
                     src={project.process.images[0]} 
                     alt="Digital sketch (Phones)" 
@@ -235,7 +235,7 @@ export default function CaseStudy() {
                 </div>
                 
                 {/* 3. User testing photo (images[2]) - Full width */}
-                <div className="rounded-xl overflow-hidden border border-zinc-100 shadow-sm">
+                <div className="rounded-2xl overflow-hidden border border-zinc-100 shadow-sm">
                   <img 
                     src={project.process.images[2]} 
                     alt="User testing" 
@@ -245,9 +245,9 @@ export default function CaseStudy() {
                 </div>
               </div>
             ) : (
-              <div className="space-y-6">
+              <div className="space-y-8">
                 {project.process.images.map((img, i) => (
-                  <div key={i} className="rounded-xl overflow-hidden border border-zinc-100 shadow-sm">
+                  <div key={i} className="rounded-2xl overflow-hidden border border-zinc-100 shadow-sm">
                     <img 
                       src={img} 
                       alt={`Process artifact ${i + 1}`} 
@@ -263,11 +263,11 @@ export default function CaseStudy() {
       </section>
 
       {/* 7. Solution */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-32 border-t border-zinc-100">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-24 border-t border-zinc-100">
         <div className="md:col-span-4">
           <h2 className="text-xl font-medium tracking-tight text-zinc-900">Solution</h2>
         </div>
-        <div className="md:col-span-8 space-y-16">
+        <div className="md:col-span-8 space-y-12">
           <div className="space-y-6">
             <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">Final Design</h3>
             <p className="text-xl text-zinc-600 leading-relaxed max-w-2xl">{project.solution.description}</p>
@@ -282,13 +282,13 @@ export default function CaseStudy() {
               ))}
             </div>
           </div>
-          <div className="flex flex-row flex-wrap gap-4">
+          <div className="grid grid-cols-1 gap-8">
             {project.solution.images.map((img, i) => (
-              <div key={i} className="rounded-2xl overflow-hidden border border-zinc-100 shadow-sm inline-block">
+              <div key={i} className="rounded-3xl overflow-hidden border border-zinc-100 shadow-sm bg-zinc-50">
                 <img 
                   src={img} 
                   alt="UI Solution" 
-                  className="max-h-[600px] w-auto block" 
+                  className="w-full h-auto block" 
                   referrerPolicy="no-referrer" 
                 />
               </div>
@@ -298,16 +298,16 @@ export default function CaseStudy() {
       </section>
 
       {/* 8. Impact */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-32 border-t border-zinc-100">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-24 border-t border-zinc-100">
         <div className="md:col-span-4">
           <h2 className="text-xl font-medium tracking-tight text-zinc-900">
             {project.id === "joinme" ? "Validation from Testing" : "Impact"}
           </h2>
         </div>
         <div className="md:col-span-8">
-          <div className="space-y-8 max-w-2xl">
+          <div className="space-y-6 max-w-2xl">
             {project.impact.map((imp, i) => (
-              <div key={i} className="pb-8 border-b border-zinc-50 last:border-0">
+              <div key={i} className="pb-6 border-b border-zinc-50 last:border-0">
                 <p className="text-xl text-zinc-600 leading-relaxed">{imp}</p>
               </div>
             ))}
@@ -316,7 +316,7 @@ export default function CaseStudy() {
       </section>
 
       {/* 9. Reflection */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-32 border-t border-zinc-100">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-24 border-t border-zinc-100">
         <div className="md:col-span-4">
           <h2 className="text-xl font-medium tracking-tight text-zinc-900">
             {project.id === "joinme" ? "What I Learned" : "Reflection"}
