@@ -47,18 +47,18 @@ export const PROJECTS: Project[] = [
     title: "JoinMe",
     subtitle: "Task-based social platform designed to reduce anxiety in meeting new people.",
     image: "https://lh3.googleusercontent.com/d/1-qeqwDvcpO4_Uk1FtUh8PHYKMErSgpkx",
-    summary: "JoinMe reframes connection around everyday action. Instead of asking 'Who do you want to be friends with?', the system asks 'What are you already doing today?'",
+    summary: "JoinMe is a product concept that reframes connection around everyday action. Instead of asking users who they want to be friends with, it begins with a simpler question: what are you already doing today?",
     role: "Sole UX Researcher & Product Designer",
     type: "Research, Service Prototyping, Product Architecture, Iteration",
     timeline: "8 months (2024-2025)",
     tools: ["Figma", "Field Interviews", "Surveys", "Service Prototyping", "Usability Testing"],
-    problem: "Despite the rise of friendship platforms like Bumble BFF and Meetup, many interactions never transition into real-world engagement. Through early interviews, I identified a structural friction: these platforms frame interaction around “making friends” or attending planned events, requiring emotional commitment before trust is established.",
-    goal: "If connection begins with a shared low-pressure task rather than a social label, users will experience lower anxiety and be more likely to transition from digital interaction to real-world engagement.",
+    problem: "Despite the rise of friendship platforms such as Bumble BFF and Meetup, many interactions never transition into real-world engagement. Early interviews suggested a structural issue: these platforms often ask for emotional commitment before trust has been established.",
+    goal: "I wanted to test whether beginning with a shared, low-pressure task rather than a friendship label could reduce anxiety and make real-world interaction more likely.",
     constraints: [
-      "Age Affects Willingness: Older participants were significantly less open to meeting strangers through an app.",
-      "Safety Visibility Drives Engagement: Privacy and location exposure are primary barriers.",
-      "Simplicity Enables Spontaneity: Overly complex filtering reduced willingness to engage.",
-      "Spontaneity vs Safety: Balancing lightweight filters with trust-enhancing profiles."
+      "Older participants were significantly less open to meeting strangers through an app.",
+      "Privacy and location exposure were primary barriers to engagement.",
+      "Overly complex filtering reduced willingness to participate.",
+      "The design needed to balance spontaneity with safety, clarity, and trust."
     ],
     methods: [
       "~40 in-person field interviews",
@@ -67,10 +67,10 @@ export const PROJECTS: Project[] = [
       "Multiple usability testing rounds (20–50 participants per session)"
     ],
     insights: [
-      "Shared tasks reduce anxiety: Action reduced pressure and conversational anxiety decreased once engaged.",
-      "Safety visibility drives engagement: Trust mechanisms needed to be structurally visible.",
-      "Simplicity enables spontaneity: Streamlined interaction increased clarity and perceived ease.",
-      "Age affects willingness: Younger adults demonstrated higher openness to task-based interaction."
+      "Shared tasks reduce anxiety: Starting from an activity lowered social pressure and made first interactions feel more natural.",
+      "Safety visibility drives engagement: Participants needed trust mechanisms to be clearly visible before they were willing to proceed.",
+      "Simplicity enables spontaneity: Streamlined interaction increased clarity and made participation feel easier.",
+      "Age affects willingness: Younger adults showed greater openness to task-based interaction than older participants."
     ],
     behavioralFindings: {
       title: "Key Behavioral Findings",
@@ -82,7 +82,7 @@ export const PROJECTS: Project[] = [
       ]
     },
     structuralDecisions: {
-      title: "Iteration & Structural Decisions",
+      title: "Structural Decisions & Trade-offs",
       decisions: [
         {
           label: "Privacy-First Location System",
@@ -103,10 +103,10 @@ export const PROJECTS: Project[] = [
     },
     process: {
       steps: [
-        "Conducted ~40 field interviews and ~30 surveys to identify structural friction in social platforms.",
-        "Executed a live service prototype with 3 participant pairs to validate the 'Task First' hypothesis.",
-        "Performed multiple usability testing rounds with cohorts of 20-50 participants.",
-        "Iterated on product architecture: implemented distance-only privacy, lightweight filters, and trust-enhancing profiles."
+        "Conducted approximately 40 field interviews and 30 surveys to identify structural friction in social platforms.",
+        "Built a live service prototype with 3 participant pairs to test the task-first hypothesis.",
+        "Ran multiple usability testing rounds to evaluate interaction clarity, comfort, and willingness to engage.",
+        "Iterated the product structure by introducing distance-only privacy, lightweight filters, and trust-enhancing profiles."
       ],
       images: [
         "https://lh3.googleusercontent.com/d/16lq8RO0sY74yrEXlojxHQbBkiKZu4Yzb",
@@ -115,7 +115,7 @@ export const PROJECTS: Project[] = [
       ]
     },
     solution: {
-      description: "JoinMe reframes connection around everyday action. The design prioritizes psychological safety, immediacy, and reduced social pressure.",
+      description: "JoinMe reframes connection around everyday action rather than friendship-first matching. The final design prioritizes psychological safety, immediacy, and low-pressure interaction.",
       features: [
         "Task-first discovery model",
         "Real-time proximity matching",
@@ -129,15 +129,14 @@ export const PROJECTS: Project[] = [
       ]
     },
     impact: [
-      "Increased willingness among young adults to meet when interaction centered on tasks.",
-      "Reduced reported anxiety once engaged in shared activity.",
-      "Higher engagement when safety mechanisms were foregrounded."
+      "Participants showed greater willingness to engage when interaction began with a shared task.",
+      "Conversation anxiety decreased once participants were engaged in a shared activity.",
+      "Visible safety mechanisms increased confidence in continuing the interaction."
     ],
     reflection: [
-      "Strengthened ability to translate qualitative research into structural product decisions.",
-      "Validated behavioral hypotheses through live prototyping.",
-      "Balanced competing forces: spontaneity vs safety, simplicity vs control.",
-      "Designing for connection requires designing for trust first."
+      "Qualitative research becomes most valuable when it directly shapes product structure.",
+      "Designing for connection requires designing visible trust, not assuming it.",
+      "Live prototyping is essential when testing behavior, not just interface preference."
     ]
   },
   {

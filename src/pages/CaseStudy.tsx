@@ -195,7 +195,9 @@ export default function CaseStudy() {
       {/* 6. Process */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-32 border-t border-zinc-100">
         <div className="md:col-span-4">
-          <h2 className="text-xl font-medium tracking-tight text-zinc-900">Process</h2>
+          <h2 className="text-xl font-medium tracking-tight text-zinc-900">
+            {project.id === "joinme" ? "Design Process" : "Process"}
+          </h2>
         </div>
         <div className="md:col-span-8 space-y-16">
           <div className="space-y-6">
@@ -298,7 +300,9 @@ export default function CaseStudy() {
       {/* 8. Impact */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-32 border-t border-zinc-100">
         <div className="md:col-span-4">
-          <h2 className="text-xl font-medium tracking-tight text-zinc-900">Impact</h2>
+          <h2 className="text-xl font-medium tracking-tight text-zinc-900">
+            {project.id === "joinme" ? "Validation from Testing" : "Impact"}
+          </h2>
         </div>
         <div className="md:col-span-8">
           <div className="space-y-8 max-w-2xl">
@@ -314,7 +318,9 @@ export default function CaseStudy() {
       {/* 9. Reflection */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-16 pt-32 border-t border-zinc-100">
         <div className="md:col-span-4">
-          <h2 className="text-xl font-medium tracking-tight text-zinc-900">Reflection</h2>
+          <h2 className="text-xl font-medium tracking-tight text-zinc-900">
+            {project.id === "joinme" ? "What I Learned" : "Reflection"}
+          </h2>
         </div>
         <div className="md:col-span-8">
           <ul className="space-y-6 max-w-2xl">
