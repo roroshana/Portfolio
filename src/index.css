@@ -43,4 +43,16 @@
   .bg-sage-tint { background-color: rgba(168, 184, 163, 0.08); }
   .bg-pink-tint { background-color: rgba(232, 199, 193, 0.12); }
   .bg-blue-tint { background-color: rgba(124, 147, 183, 0.08); }
+
+  .soft-container {
+    @apply bg-white/60 rounded-[32px] md:rounded-[48px] p-8 md:p-16 lg:p-24 shadow-[0_8px_40px_-20px_rgba(31,31,28,0.08)] border border-sage-green/5;
+  }
+
+  .soft-shadow {
+    @apply shadow-[0_15px_45px_-15px_rgba(31,31,28,0.06)];
+  }
+
+  .micro-dot {
+    @apply w-1.5 h-1.5 rounded-full;
+  }
 }
