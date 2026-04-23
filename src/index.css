@@ -9,6 +9,7 @@
   --color-sage-green: #A8B8A3;
   --color-dusty-blue: #7C93B7;
   --color-terracotta: #B86F5C;
+  --color-soft-pink: #E8C7C1;
 }
 
 @layer base {
@@ -21,21 +22,25 @@
     font-size: 18px;
   }
 
-  h1 {
-    @apply text-deep-charcoal font-medium tracking-tight;
+  h1, h2, h3 {
+    @apply text-deep-charcoal font-bold tracking-tighter;
   }
 
   p {
-    @apply text-muted-gray leading-relaxed;
+    @apply text-muted-gray leading-relaxed font-light;
   }
 }
 
 @layer components {
   .section-divider {
-    @apply border-t border-sage-green/30;
+    @apply border-t border-sage-green/10;
   }
 
   .label-tag {
-    @apply text-[13px] uppercase tracking-[0.1em] font-semibold text-muted-gray;
+    @apply text-[11px] uppercase tracking-[0.2em] font-bold text-muted-gray;
   }
+
+  .bg-sage-tint { background-color: rgba(168, 184, 163, 0.08); }
+  .bg-pink-tint { background-color: rgba(232, 199, 193, 0.12); }
+  .bg-blue-tint { background-color: rgba(124, 147, 183, 0.08); }
 }
