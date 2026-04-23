@@ -26,7 +26,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, ease: [0.19, 1, 0.22, 1] }}
-                className="text-[48px] md:text-[86px] lg:text-[104px] font-bold tracking-tighter leading-[0.9] text-deep-charcoal"
+                className="text-[48px] md:text-[86px] lg:text-[104px] font-bold tracking-tighter leading-[1.1] text-deep-charcoal"
               >
                 Designing systems that <br className="hidden lg:block" />
                 <span className="text-muted-gray/40 italic font-medium">connect people</span>, <br className="hidden lg:block" />
