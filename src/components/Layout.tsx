@@ -13,21 +13,21 @@ export default function Layout({ children }: LayoutProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="min-h-screen bg-white text-zinc-900 font-sans selection:bg-zinc-100">
+    <div className="min-h-screen bg-warm-white text-deep-charcoal font-sans selection:bg-dusty-blue/20">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-zinc-100">
+      <header className="fixed top-0 left-0 right-0 bg-warm-white/80 backdrop-blur-md z-50 border-b border-sage-green/10">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
             {!isHome && (
               <Link
                 to="/"
-                className="p-2 -ml-2 hover:bg-zinc-50 rounded-full transition-colors group"
+                className="p-2 -ml-2 hover:bg-sage-green/10 rounded-full transition-colors group"
                 aria-label="Back to home"
               >
-                <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
+                <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform text-muted-gray" />
               </Link>
             )}
-            <Link to="/" className="text-xl font-medium tracking-tight hover:opacity-70 transition-opacity">
+            <Link to="/" className="text-xl font-medium tracking-tight hover:text-dusty-blue transition-colors">
               Roshana Rostami
             </Link>
           </div>
@@ -36,7 +36,7 @@ export default function Layout({ children }: LayoutProps) {
             href="https://drive.google.com/file/d/1Y5EsX7yb1hHu0g6qd7G7WpM6EyjhN8AJ/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2.5 bg-zinc-900 text-white text-sm font-medium rounded-full hover:bg-zinc-800 transition-all active:scale-95 shadow-sm"
+            className="px-5 py-2.5 bg-deep-charcoal text-warm-white text-sm font-medium rounded-full hover:bg-muted-gray transition-all active:scale-95 shadow-sm"
           >
             Resume
           </a>
@@ -56,32 +56,32 @@ export default function Layout({ children }: LayoutProps) {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-100 py-16 bg-zinc-50/30">
+      <footer className="border-t border-sage-green/10 py-16 bg-warm-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
             <div className="space-y-4">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-zinc-400">Get in touch</h3>
+              <h3 className="label-tag">Get in touch</h3>
               <div className="flex flex-col gap-3">
                 <a
                   href="mailto:Rostami.roshana@gmail.com"
-                  className="flex items-center gap-2 text-lg hover:text-zinc-500 transition-colors w-fit"
+                  className="flex items-center gap-2 text-lg hover:text-dusty-blue transition-colors w-fit font-medium"
                 >
-                  <Mail className="w-5 h-5" />
+                  <Mail className="w-5 h-5 text-sage-green" />
                   <span>Rostami.roshana@gmail.com</span>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/roshana-r-238187196"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-lg hover:text-zinc-500 transition-colors w-fit"
+                  className="flex items-center gap-2 text-lg hover:text-dusty-blue transition-colors w-fit font-medium"
                 >
-                  <Linkedin className="w-5 h-5" />
+                  <Linkedin className="w-5 h-5 text-sage-green" />
                   <span>LinkedIn</span>
                 </a>
               </div>
             </div>
             
-            <div className="text-sm text-zinc-400 font-medium">
+            <div className="text-sm text-muted-gray font-medium">
               © {currentYear} Roshana Rostami. All rights reserved.
             </div>
           </div>

@@ -15,33 +15,40 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: index * 0.1, duration: 0.5 }}
+      transition={{ delay: index * 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      className="w-full"
     >
       <Link
         to={`/${project.id}`}
-        className="group block space-y-6"
+        className="group block space-y-6 relative"
       >
-        <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-zinc-100 border border-zinc-100 relative">
+        <div className="relative overflow-hidden rounded-sm bg-warm-white border border-sage-green/10 shadow-sm transition-transform duration-700 ease-out group-hover:shadow-md">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            className="w-full h-auto object-contain transition-transform duration-1000 ease-out"
+            style={{ maxHeight: '600px' }}
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
-          <div className="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white bg-zinc-900/90 px-3 py-1.5 rounded-full backdrop-blur-sm">
-              View Case Study
-            </span>
-          </div>
+          {/* Subtle tint shift on hover */}
+          <div className="absolute inset-0 bg-dusty-blue/0 group-hover:bg-dusty-blue/5 transition-colors duration-500" />
+          
+          {/* Subtle accent line visible on hover */}
+          <div className="absolute bottom-0 left-0 w-0 h-1 bg-sage-green group-hover:w-full transition-all duration-700 ease-in-out" />
         </div>
-        <div className="space-y-1">
-          <h3 className="text-xl font-medium tracking-tight group-hover:text-zinc-600 transition-colors">
-            {project.title}
-          </h3>
-          <p className="text-zinc-500 text-sm leading-relaxed">
-            {project.subtitle}
-          </p>
+
+        <div className="space-y-3 relative">
+          <span className="label-tag text-[10px] text-sage-green border border-sage-green/20 px-2 py-0.5 rounded-full inline-block">
+            Project {index + 1}
+          </span>
+          <div className="space-y-1">
+            <h3 className="text-2xl font-medium tracking-tight text-deep-charcoal group-hover:text-dusty-blue transition-colors duration-500">
+              {project.title}
+            </h3>
+            <p className="text-muted-gray text-base leading-relaxed line-clamp-1">
+              {project.subtitle}
+            </p>
+          </div>
         </div>
       </Link>
     </motion.div>

@@ -3,6 +3,12 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-warm-white: #F7F4EE;
+  --color-deep-charcoal: #1F1F1C;
+  --color-muted-gray: #6E6A63;
+  --color-sage-green: #A8B8A3;
+  --color-dusty-blue: #7C93B7;
+  --color-terracotta: #B86F5C;
 }
 
 @layer base {
@@ -11,6 +17,25 @@
   }
   
   body {
-    @apply antialiased;
+    @apply antialiased bg-warm-white text-deep-charcoal;
+    font-size: 18px;
+  }
+
+  h1 {
+    @apply text-deep-charcoal font-medium tracking-tight;
+  }
+
+  p {
+    @apply text-muted-gray leading-relaxed;
+  }
+}
+
+@layer components {
+  .section-divider {
+    @apply border-t border-sage-green/30;
+  }
+
+  .label-tag {
+    @apply text-[13px] uppercase tracking-[0.1em] font-semibold text-muted-gray;
   }
 }
