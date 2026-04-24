@@ -16,7 +16,7 @@ export default function CaseStudy() {
       {/* 1. Hero Section */}
       <section className="space-y-10 pt-12 md:pt-20">
         <div className="space-y-6 max-w-4xl">
-          <h1 className="text-6xl md:text-8xl font-medium tracking-tight leading-[0.95] text-zinc-900">
+          <h1 className="text-6xl md:text-8xl font-medium tracking-tight leading-[0.95] text-zinc-900 whitespace-pre-line">
             {project.title}
           </h1>
           <div className="text-2xl md:text-3xl text-zinc-500 leading-tight max-w-3xl space-y-6">

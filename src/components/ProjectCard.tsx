@@ -47,7 +47,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           </div>
           
           <div className="space-y-3">
-            <h3 className="text-3xl md:text-4xl font-bold tracking-tighter text-deep-charcoal group-hover:text-sage-green transition-colors duration-500 leading-tight">
+            <h3 className="text-3xl md:text-4xl font-bold tracking-tighter text-deep-charcoal group-hover:text-sage-green transition-colors duration-500 leading-tight whitespace-pre-line">
               {project.title}
             </h3>
             <p className="text-muted-gray text-lg md:text-xl font-light leading-snug max-w-xl">

@@ -235,7 +235,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "cafe-redesign",
-    title: "University Café — Service System Redesign",
+    title: "University Café\nService System Redesign (Concept)",
     subtitle: "Improving peak-hour café flow through spatial service architecture.",
     image: "https://lh3.googleusercontent.com/d/1XsSfTvVdFRNqePb9XY9GKJCEZKp1ewBz",
     heroImage: "https://lh3.googleusercontent.com/d/1S4PvbRS1GQ2prAaNW0qDGSHIVKNA2xNT",
